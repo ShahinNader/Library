@@ -1,0 +1,148 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#mainContainer {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+#header {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-bottom: solid black;
+}
+
+#Library {
+    height: 60%;
+    border: solid black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 4%;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-wrap: break-word;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s;
+}
+
+.newPage {
+    width: 12%;
+    height: 8%;
+    margin-bottom: 1%;
+    background-color: unset;
+    color: black;
+    border: solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover {
+    opacity: 0.1;
+}
+
+button:active {
+    transform: scale(0.95, 0.95);
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1%;
+}
+
+#cancelButton {
+    background-color: #af4c4c;
+}
+
+#cancelButton:hover {
+    background-color: #a04545;
+}
+
+
+/* Add a background color to the submit button on mouse-over */
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit]:active {
+    transform: scale(0.95, 0.95);
+}
+
+.NewBookContainer {
+    display: none;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1%;
+    border: solid black;
+    border-radius: 20px;
+    padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#submit-cancel {
+    display: flex;
+}

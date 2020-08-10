@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="header">
+            <h1>The Library</h1>
+            <p> Created by Shahin Nader <img></p>
+        </div>
+        <button class="newPage" id="newPageButton">New book</button>
+        <div class="NewBookContainer" id="newBookContainer">
+            <form>
+
+                <label for="title_input">Title</label>
+                <input type="text" id="title_input" name="title" placeholder="Title">
+
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="author">
+
+                <label for="pages">pages</label>
+                <input type="text" id="pages" name="pages" placeholder="number of pages">
+
+
+
+                <label for="read">Have you finished the book?</label>
+                <select id="read" name="read">
+                  <option value="read">Yes</option>
+                  <option value="notRead">No</option>
+                  
+                </select>
+                <div id="submit-cancel">
+                    <input type="submit" value="Add" id="addButton">
+
+                    <input type="submit" value="Cancel" id="cancelButton">
+
+                </div>
+
+
+            </form>
+        </div>
+
+        <div id="Library">
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--
+    
+    <div id="card0" class="card">
+                <h1>The hobbit</h1>
+                <p class="title">J.R.R Tolkien</p>
+                <p> 264 pages</p>
+
+                <p><button>Read</button></p>
+            </div>
+-->
